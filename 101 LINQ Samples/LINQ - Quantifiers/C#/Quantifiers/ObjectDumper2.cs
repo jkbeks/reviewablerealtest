@@ -10,7 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
-public class ObjectDumper {
+public class ObjectDumper2 {
     public static void Write(object value) {
         Write(value, 0);
     }
@@ -25,7 +25,7 @@ public class ObjectDumper {
     int level;
     int dumpDepth;
 
-    private ObjectDumper(int dumpDepth) {
+    private ObjectDumper2(int dumpDepth) {
         this.writer = Console.Out;
         this.dumpDepth = dumpDepth;
     }
