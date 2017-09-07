@@ -1,4 +1,4 @@
-﻿var Galleries = Galleries || { };
+var Galleries = Galleries || { };
 
 (function() {
 
@@ -14,17 +14,21 @@
 
     function findArrayElem(array, evaluator) {
         var newArray = new Array();
-        for (var count = 0; count < array.length; count++) {
-            if (evaluator(array[count])) {
-                newArray.push(array[count]);
-            }
+        if (array) {
+	        for (var count = 0; count < array.length; count++) {
+    	        if (evaluator(array[count])) {
+        	        newArray.push(array[count]);
+            	}
+           	}
         }
         return newArray;
     }
 
     function iterateElem(elems, delegate) {
-        for(var count = 0; count < elems.length; count++) {
-            delegate(count, elems[count]);
+    	if (elems) {
+        	for(var count = 0; count < elems.length; count++) {
+            	delegate(count, elems[count]);
+            }
         }
     }
 
