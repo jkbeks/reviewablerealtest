@@ -108,9 +108,9 @@ Name: Pager
 Root: #Pager
 Description: The common paging control, used for browsing pages of search results
 ********************************/
-#Pager {
+.Pager {
 }
-    #Pager div{
+    .Pager div{
         display:inline;
     }
 /* End Pager Section */
@@ -122,7 +122,7 @@ Root: #dashboardPage #userCard
 Description: Elements in the profile usercard control
 
 ********************************/
-    #dashboardPage #userCard .profile-usercard-inline {
+    .dashboardPage .userCard .profile-usercard-inline {
         margin: 5px 0 10px 0;
     }
 
@@ -139,10 +139,10 @@ Description: Defines the layout of the dicussion
 
 
 ********************************/
-#DiscussionsTabPane {
+.DiscussionsTabPane {
 }
 
-    #DiscussionsTabPane .itemHidden
+    .DiscussionsTabPane .itemHidden
     {
         background: lightgrey;
     }
