@@ -1,4 +1,4 @@
-﻿/* ***************************************************
+/* ***************************************************
 Galleries.css   - Common Structure
 
 This is where we define common layout for structures that are truly close to common across the different
@@ -58,30 +58,30 @@ img.rss {
 /* End Global Section */
 
 /********************************
-Name: FileAttachmentDisplay
-Root: #fileAttachmentDisplay
+Name: fileAttachmentView
+Root: #fileAttachmentView
 Description: The list of attached files under the editor
 ********************************/
-#fileAttachmentDisplay {
+#fileAttachmentView {
 }
-    #fileAttachmentDisplay .attachment {
+    #fileAttachmentView .attachment {
         margin-right: 10px;
         float: left;
     }
 
-        #fileAttachmentDisplay .attachment .displayAttachment {
+        #fileAttachmentView .attachment .displayAttachment {
             padding: 0px 0 13px 0;
             float: left;
         }
 
-        #fileAttachmentDisplay .attachment .removeAttachment {
+        #fileAttachmentView .attachment .removeAttachment {
             background-image: url('/Content/Common/delete.png');
             display: block;
             width: 16px;
             height: 16px;
             float: left;
         }
-/* End FileAttachmentDisplay Section */
+/* End fileAttachmentView Section */
 
 
 /********************************
