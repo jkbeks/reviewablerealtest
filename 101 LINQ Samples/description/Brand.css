@@ -1,12 +1,12 @@
-﻿#BodyBackground
+#BodyBackground
 {
     min-width:0px;
 }
 
 #JelloExpander, .IE7 #JelloExpander, .IE8 #JelloExpander, .IE9 #JelloExpander
 {
-    padding-left:0px;
-    padding-right:0px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 #JelloSizer
@@ -20,12 +20,12 @@
 /* Global Styles */
 body 
 {
-    font-size:0.75em;
+    font-size:0.85em;
 }
 
 h1 
 {
-    font-size: 36px;
+    font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
     color: #000;
     font-weight: normal;
@@ -43,10 +43,10 @@ h2, h3, h4, h5, h6
 }
 
 a, a:link, a:visited {
-    color: #00749E;
+    color: #FF749E;
 }
 a:hover {
-    color: #0095c4;
+    color: #FF95c4;
     text-decoration:none;
 }
 
@@ -86,7 +86,7 @@ a:hover {
         .LocalNavigation .TabOff a:hover {
             background-color:#E0E7EC;
             margin-top: 1px;
-            padding: 4px 6px;
+            padding: 4px 6px 2px 2px;
         }
 
         .LocalNavigation #notificationLink span {
@@ -102,7 +102,7 @@ a:hover {
 .subMenu
 {
     margin: 0 0 10px 0;
-    color: #FFFFFF;
+    color: #FF00FF;
     overflow: hidden;
 }
 
@@ -164,7 +164,7 @@ div.searchbox
     color: #999;
     padding: 0px 2px;
     height: 25px;
-    table-layout: auto;
+    table-layout: fit;
     margin-bottom:5px;
 }
 
