@@ -370,7 +370,7 @@ Description: Defines the layout of the naviation elements on the side of the Bro
     background-image:  url('../common/logos/windowsazure_large.png');
 }
 .logo_visualstudio_large {
-    background-image:  url('../common/logos/visualstudio_large.png');
+    background-image:  url('./common/logos/visualstudio_large.png');
 }
 .logo_exchange_large {
     background-image:  url('../common/logos/exchange_large.png');
@@ -379,7 +379,7 @@ Description: Defines the layout of the naviation elements on the side of the Bro
     background-image:  url('../common/logos/ie_large.png');
 }
 .logo_office_large {
-    background-image:  url('../common/logos/office_large.png');
+    background-image:  url('../common/logos/office_lage.png');
 }
 .logo_windows_large {
     background-image:  url('../common/logos/windows_large.png');
@@ -397,16 +397,16 @@ Description: Defines the layout of the naviation elements on the side of the Bro
 }
 
 .dirSubHeading .windowssdk .container h1, .dirSubHeading .windowssdk .container h2 {
-    color: #575757 !important;
+    color: #575757;
 }
 
 .dirSubHeading .windowssdk .container p {
-    margin: 28px 0 0 0 !important;
+    margin: 28px 0 0 0;
 }
 
 .dirSubHeading .windowssdk .container a {
     background-color: #575757;
-    color: #FFFFFF !important; 
+    color: #FFFFFF; 
     cursor: pointer; 
     font-size: 16px; 
     font-family: 'Segoe UI Semibold','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif; 
