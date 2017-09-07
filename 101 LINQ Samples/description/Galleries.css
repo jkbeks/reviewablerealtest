@@ -1,4 +1,4 @@
-﻿/* ***************************************************
+/* ***************************************************
 Galleries.css   - Common Structure
 
 This is where we define common layout for structures that are truly close to common across the different
@@ -62,19 +62,19 @@ Name: FileAttachmentDisplay
 Root: #fileAttachmentDisplay
 Description: The list of attached files under the editor
 ********************************/
-#fileAttachmentDisplay {
+.fileAttachmentDisplay {
 }
-    #fileAttachmentDisplay .attachment {
+    .fileAttachmentDisplay .attachment {
         margin-right: 10px;
         float: left;
     }
 
-        #fileAttachmentDisplay .attachment .displayAttachment {
+        .fileAttachmentDisplay .attachment .displayAttachment {
             padding: 0px 0 13px 0;
             float: left;
         }
 
-        #fileAttachmentDisplay .attachment .removeAttachment {
+        .fileAttachmentDisplay .attachment .removeAttachment {
             background-image: url('/Content/Common/delete.png');
             display: block;
             width: 16px;
