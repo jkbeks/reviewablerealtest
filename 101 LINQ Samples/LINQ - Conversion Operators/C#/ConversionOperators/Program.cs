@@ -1,32 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.ComponentModel;
-using System.Xml.Linq;
+using System.Linq;
 
 namespace ConversionOperators
 {
-    class Program
+	class Program
     {
         static void Main(string[] args)
         {
             LinqSamples samples = new LinqSamples();
 
-            //Comment or uncomment the method calls below to run or not
+			//Comment or uncomment the method calls below to run or not
 
-              samples.Linq54(); // This sample uses ToArray to immediately evaluate a sequence into an array
+			//samples.Linq54(); // This sample uses ToArray to immediately evaluate a sequence into an array
 
-            //samples.Linq55(); // This sample uses ToList to immediately evaluate a sequence into a List<T>
+			//samples.Linq55(); // This sample uses ToList to immediately evaluate a sequence into a List<T>
 
-            //samples.Linq56(); // This sample uses ToDictionary to immediately  evaluate a  sequence  and a 
-                                // related key expression into a dictionary
+			//samples.Linq56(); // This sample uses ToDictionary to immediately  evaluate a  sequence  and a related key expression into a dictionary
+			samples.Linq56b();
 
-            //samples.Linq57(); // This sample uses OfType to return only the elements of the array that are 
-                                // of type double
-        }
+			//samples.Linq57(); // This sample uses OfType to return only the elements of the array that are of type double
+		}
 
-        class LinqSamples
+		class LinqSamples
         {
             [Category("Conversion Operators")]
             [Description("This sample uses ToArray to immediately evaluate a sequence into an array.")]
@@ -81,7 +77,40 @@ namespace ConversionOperators
                 Console.WriteLine("Bob's score: {0}", scoreRecordsDict["Bob"]);
             }
 
-            [Category("Conversion Operators")]
+			[Category("Conversion Operators")]
+			[Description("This sample uses ToDictionary to immediately evaluate a sequence and a related key expression into a dictionary.")]
+			public void Linq56b()
+			{
+				// Create an array of strings.
+				string[] array = { "cat", "dog", "horse" };
+
+				// Generate a lookup structure where the lookup is based on the key length.
+				var lookup = array.ToLookup(item => item.Length);
+
+				// Enumerate strings of length 3.
+				foreach (string item in lookup[3])
+				{
+					Console.WriteLine("3 = " + item);
+				}
+
+				// Enumerate strings of length 5.
+				foreach (string item in lookup[5])
+				{
+					Console.WriteLine("5 = " + item);
+				}
+
+				// Enumerate groupings.
+				foreach (var grouping in lookup)
+				{
+					Console.WriteLine("Grouping:");
+					foreach (string item in grouping)
+					{
+						Console.WriteLine(item);
+					}
+				}
+			}
+
+			[Category("Conversion Operators")]
             [Description("This sample uses OfType to return only the elements of the array that are of type double.")]
             public void Linq57()
             {
