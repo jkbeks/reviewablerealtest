@@ -6,11 +6,8 @@
 
 using System;
 using System.IO;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 
-public class ObjectDumper {
+public class ObjectDumper3 {
     public static void Write(object value) {
         Write(value, 0);
     }
@@ -25,7 +22,7 @@ public class ObjectDumper {
     int level;
     int dumpDepth;
 
-    private ObjectDumper(int dumpDepth) {
+    private ObjectDumper3(int dumpDepth) {
         this.writer = Console.Out;
         this.dumpDepth = dumpDepth;
     }

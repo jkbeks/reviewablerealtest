@@ -58,12 +58,11 @@ img.rss {
 /* End Global Section */
 
 /********************************
-Name: FileAttachmentDisplay
-Root: #fileAttachmentDisplay
+Name: fileAttachmentView
+Root: #fileAttachmentView
 Description: The list of attached files under the editor
 ********************************/
-.fileAttachmentDisplay {
-}
+.fileAttachmentView {
     .fileAttachmentDisplay .attachment {
         margin-right: 10px;
         float: left;
@@ -81,7 +80,7 @@ Description: The list of attached files under the editor
             height: 16px;
             float: left;
         }
-/* End FileAttachmentDisplay Section */
+/* End fileAttachmentView Section */
 
 
 /********************************
