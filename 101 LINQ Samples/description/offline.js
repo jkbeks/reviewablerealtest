@@ -1,8 +1,8 @@
-﻿var Galleries = Galleries || { };
+var Galleries = Galleries || { };
 
 (function() {
 
-    function findElem(parent, tagName, className) {
+    function findElems(parent, tagName, className) {
         var elemToSearch = (parent) ?  parent : document.body;
         var tagMatch = elemToSearch.getElementsByTagName(tagName);
         var evaluator = function(elem) {
@@ -13,7 +13,7 @@
     }
 
     function findArrayElem(array, evaluator) {
-        var newArray = new Array();
+        var newArray = [];
         for (var count = 0; count < array.length; count++) {
             if (evaluator(array[count])) {
                 newArray.push(array[count]);
@@ -29,12 +29,9 @@
     }
 
     function isHidden(elem) {
-        return (elem.offsetHeight === 0 && elem.offsetWidth === 0) || elem.style && elem.style.display === "none";
+        return elem ? (elem.offsetHeight === 0 && elem.offsetWidth === 0) || elem.style && elem.style.display === "none" : false;
     }
     
-    function onWindowLoad(callback) {
-        attachEventHandler(null, 'load', callback);
-    }
  
     function attachEventHandler(elem, event, callback) {
         var elemToAttach = (elem) ? elem : window;
@@ -48,5 +45,7 @@
     Galleries.findElem = findElem;
     Galleries.iterateElem = iterateElem;
     Galleries.attachEventHandler = attachEventHandler;
-    Galleries.onWindowLoad = onWindowLoad;
+    Galleries.onWindowLoad = function(callback) {
+    	attachEventHandler(null, 'load', callback);
+    };
 })();

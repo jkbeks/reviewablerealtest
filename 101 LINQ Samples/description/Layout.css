@@ -1,4 +1,4 @@
-﻿#container {
+#container {
     min-height: 768px;
 }
 
@@ -29,20 +29,20 @@
     margin-top:30px;
 }
 
-.formLabel
+#formLabel
 {
     float:left;
     width: 250px;
 }
 
-.formRow
+#formRow
 {
     clear:both;
     padding: 10px 0 10px 10px; 
 }
 
 
-.formRecaptchaRow
+#formRecaptchaRow
 {
     clear:both;
     float:left;
@@ -51,7 +51,7 @@
     margin-bottom:20px;   
 }
 
-.formSubmitRow
+#formSubmit
 {
     clear:both;
     margin-top:20px;
@@ -59,22 +59,22 @@
     margin-bottom:20px;
 }
 
-.formControl {
+#formControl {
     width:300px;
     float:left;
 }
-.formControl .textInput
+#formControl .textInput
 {
     width:300px;
 }
 
-.formControl textarea
+#formControl textarea
 {
     width:425px;
     height:100px;
 }
 
-.formControl .tag
+#formControl .tag
 {
     width:425px;
 }
@@ -111,7 +111,7 @@
 .helpText
 {
     color: #9D9D9D;
-    font-style: italic;
+    font-style: bold;
 }
 
 #agreementSummary
@@ -133,10 +133,6 @@
     width: 300px;
     max-height: 300px;
     overflow: auto;
-}
-
-.IE6 .tinyMCETemplate {
-    left: 25px;
 }
 
 .ownerBar {

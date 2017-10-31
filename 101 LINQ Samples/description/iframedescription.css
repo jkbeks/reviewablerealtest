@@ -1,6 +1,6 @@
-﻿body {
+body {
     color: #000000;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 0.813em;
     font-style: normal;
     word-wrap: break-word;
@@ -9,7 +9,7 @@
 /*BEGIN HEADERS*/
 .h1, h1 {
     color: #3A3E43;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 1.4em;
     font-weight: bold;
     margin: 0;
@@ -17,19 +17,19 @@
 
 .h2, h2 {
     color: #3A3E43;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 1.2em;
     font-weight: bold;
 }
 .h3, h3 {
     color: #3A3E43;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 1.077em;
     font-weight: bold;
 }
 .h4, h4 {
     color: #3A3E43;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 1em;
     font-weight: bold;
 }
@@ -45,14 +45,14 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: bold;
 }
 a:visited {
     color: #960BB4;
     text-decoration: none;
 }
 a:focus {
-    outline: 1px dotted #000000;
+    outline: 1px dashed #000000;
 }
 
 a.libraryLink:link {
@@ -71,7 +71,7 @@ img {
 /*BEGIN TABLE*/
 .title table {
     color: #000000;
-    font-family: 'Segoe UI',Verdana,Arial;
+    font-family: 'Segoed UI',Verdana,Arial;
     font-size: 1.077em;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ table {
 }
 
 table, table th, table td {
-    border:1px solid #BBBBBB;
+    border:1px dotted #BBBBBB;
 }
 /*END TABLE*/
 
@@ -104,22 +104,21 @@ ol li {
 
 .scriptcode {
     position: relative;
-    padding: 8px 8px 8px 8px;
-    background: #FFFFFF;
+    padding: 18px 8px 18px 8px;
+    background: #FFFFAA;
     font-size: 12px;
-    line-height: 125%;
+    line-height: 115%;
     font-weight:normal;
 }
 .scriptcode pre 
 { 
-    white-space: pre-wrap !important;       /* css-3 */
-    word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
-    margin:0 0 10px 0 !important;
+    white-space: pre-wrap;       /* css-3 */
+    margin:0 0 10px;
     padding: 10px;
-    border-top: solid 2px #D0D2D2;
-    border-bottom: solid 2px #D0D2D2;
-    border-left: solid 1px #D0D2D2;
-    border-right: solid 1px #D0D2D2;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
 }
             
 .scriptcode .title { 
