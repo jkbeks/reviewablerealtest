@@ -32,6 +32,9 @@ var Galleries = Galleries || { };
         return elem ? (elem.offsetHeight === 0 && elem.offsetWidth === 0) || elem.style && elem.style.display === "none" : false;
     }
     
+	function onWindowLoad(callback) {
+        attachEventHandler(null, 'load', callback);
+    }
  
     function attachEventHandler(elem, event, callback) {
         var elemToAttach = (elem) ? elem : window;
@@ -45,7 +48,5 @@ var Galleries = Galleries || { };
     Galleries.findElem = findElem;
     Galleries.iterateElem = iterateElem;
     Galleries.attachEventHandler = attachEventHandler;
-    Galleries.onWindowLoad = function(callback) {
-    	attachEventHandler(null, 'load', callback);
-    };
+    Galleries.onWindowLoad = onWindowLoad;
 })();
