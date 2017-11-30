@@ -369,7 +369,7 @@ Description: Defines the layout of the naviation elements on the side of the Bro
     background-image:  url('../common/logos/windowsazure_large.png');
 }
 .logo_visualstudio_large {
-    background-image:  url('./common/logos/visualstudio_large.png');
+    background-image:  url('./common/logos/visualstudio_large.png'); /* visualstudio is weird duck in the bite, needs different path to image */
 }
 .logo_exchange_large {
     background-image:  url('../common/logos/exchange_large.png');
